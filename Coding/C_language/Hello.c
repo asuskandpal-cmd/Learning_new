@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-void string(int arr[5], int n);
+void printHW(int n){
+
+  int count  = n;
+ if(n == 0){
+  return;
+ }
+ 
+ printf("%d Hello world !\n ",count);
+
+ printHW(n-1);
+    
+}
 
 int main() {
-    // printf("Content-Type: text/html\n\n");
-    // printf("<html><body>");
-    // printf("<h1>Hello from C Backd!</h1>");
-    // printf("</body></html>");
-
-    
-int str1[] = {1,2,3,3,4};
-
-string(str1,5);
+   
+  printHW(5);
 
     return 0;
-}
-void string(int arr[5], int n){
-
-    for(int i = 0; i < n; i++){
-        printf("the %dst arr = %d\n",i,arr[i]);
-    }
 }

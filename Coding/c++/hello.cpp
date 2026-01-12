@@ -6,8 +6,11 @@ using std :: endl;
 
 int main(){
 
-  std::cout<<"hello world !" << endl;
-  
+  int x  = 4;
+  x << 1;
+
+  std::cout<<"hello world !" << endl; 
+  cout<<x;
 
   return 0;
 }
