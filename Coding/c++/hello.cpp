@@ -9,8 +9,12 @@ int main(){
   int x  = 4;
   x << 1;
 
+  const int i = 10;
+  i << 2;
+
   std::cout<<"hello world !" << endl; 
-  cout<<x;
+  cout<<x<<endl;
+  cout<<i;
 
   return 0;
 }
