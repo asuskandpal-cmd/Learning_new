@@ -1,24 +1,28 @@
 #include <iostream>
+#include <string>
 
-using std :: cout;
-using std :: endl;
-// using namespace std;
+using namespace std;
 
 int main(){
 
-  int x  = 4;
-  x = 1;
+ string UserName ;
 
-  const int i = 10;
+ cout<< "Bhai apka Naam kya hai : ";
+ getline(cin,UserName); 
 
-  for(int i=1; i<=5; i++){
-    cout<<i<<endl;
-  }
+//string Name = "Himesh\t";
+ 
+//   string Description = "kasie ho \"bhai\" ji";
+
   
 
-  std::cout<<"hello world !" << endl; 
-  cout<<x<<endl;
-  cout<<i;
+//   float coffeePrice = 49.99;
+//   int TotalCoffeePrice = (int) coffeePrice;
+ 
+//  cout<<TotalCoffeePrice<<endl;
+//  cout<<Name<<Description<<endl;
 
+ cout<< "UserName : "<<UserName;
+  
   return 0;
 }
