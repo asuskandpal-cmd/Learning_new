@@ -7,10 +7,14 @@ using std :: endl;
 int main(){
 
   int x  = 4;
-  x << 1;
+  x = 1;
 
   const int i = 10;
-  i << 2;
+
+  for(int i=1; i<=5; i++){
+    cout<<i<<endl;
+  }
+  
 
   std::cout<<"hello world !" << endl; 
   cout<<x<<endl;
