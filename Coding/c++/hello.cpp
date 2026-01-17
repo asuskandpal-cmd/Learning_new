@@ -6,9 +6,13 @@ using namespace std;
 int main(){
 
  string UserName ;
+ string Details = "himesh bhai \"crazy\" hai";
 
  cout<< "Bhai apka Naam kya hai : ";
  getline(cin,UserName); 
+ 
+//  getline is used to store multiple sentences instead of one
+// cin is good for storing single character
 
 //string Name = "Himesh\t";
  
@@ -22,7 +26,8 @@ int main(){
 //  cout<<TotalCoffeePrice<<endl;
 //  cout<<Name<<Description<<endl;
 
- cout<< "UserName : "<<UserName;
+ cout<< "UserName : "<<UserName<<endl;
+ cout<< "Details : "<<Details;
   
   return 0;
 }
