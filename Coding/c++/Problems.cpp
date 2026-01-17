@@ -5,18 +5,25 @@ using namespace std;
 
 int main(){
 
-    string Tea = "LemonTea";
-    float LemonTea_Price = 20.99;
-    int Price_Per_KG = 10;
-    char rating = 'A';
+   string TeaName ;
+   float TeaPrice;
+   float FinalPrice;
 
-    cout<<endl<<"---The Tea Prices With Rating---"<<endl;
-    cout<<endl;
-    
-    cout<<"Tea Name : "<<Tea<<endl;
-    cout<<"Lemon Tea price : "<<LemonTea_Price<<endl;
-    cout<<"Price per kg : "<<Price_Per_KG<<endl;
-    cout<<"Rating : "<<rating<<endl;
+   cout<<"Enter Chai name : ";
+   getline(cin,TeaName);
+
+   cout<<"Enter Base Price : ";
+   cin>>TeaPrice;
+
+   FinalPrice = TeaPrice + (TeaPrice*0.10);
+   int RoundedPrice = (int)FinalPrice;
+
+   cout<<endl<<"--- Tea Information ---"<<endl;
+   cout<<endl;
+
+   cout<<TeaName<<endl;
+   cout<<"User Base Price : "<<TeaPrice<<endl;
+   cout<<"Final Rounded Price : "<<RoundedPrice<<endl;
 
     return 0;
 }
