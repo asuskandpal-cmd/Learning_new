@@ -12,13 +12,10 @@ int main(){
 
   if(num < 0){
   cout<<"this is not a positive number";
-  
   }
 
- if(num%2 == 0){
-    cout<<"the number is even \n";
- }else{
-    cout<<"the number is odd \n";
+ for(int i = 0; i<= num; i++){
+    cout<<i<<endl;
  }
 
     return 0;
