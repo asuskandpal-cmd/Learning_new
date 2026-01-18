@@ -5,23 +5,21 @@ using namespace std;
 
 int main(){
 
-   string FavTea ;
-   int NumofTea;
+  int num ;
 
-   cout<<"Enter Tea Name : ";
-   getline(cin,FavTea);
+  cout<<endl<<"Enter any positive nummber : ";
+  cin>>num;
 
-   cout<<"Enter Number of tea : ";
-   cin>>NumofTea;
-
-   cout<<endl<<"\t--- Tea Info In fun way ---\t\n"<<endl;
+  if(num < 0){
+  cout<<"this is not a positive number";
   
-   cout<<"Name : "<<FavTea<<endl;
-   cout<<"Total number of tea user want : "<<NumofTea<<endl;
-   
-   cout<<endl;
+  }
 
-   cout<<"\t--Hello Friends Chai peelo--\t\n";
+ if(num%2 == 0){
+    cout<<"the number is even \n";
+ }else{
+    cout<<"the number is odd \n";
+ }
 
     return 0;
 }
