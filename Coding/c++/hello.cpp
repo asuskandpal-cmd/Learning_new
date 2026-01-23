@@ -5,20 +5,15 @@ using namespace std;
 
 int main(){
 
-  string choice ;
-
- while(true){
-
-  cout<<"do you want more tea : ";
-  cin>>choice;
-
-  if(choice == "stop"){
-    break;
+  string Teacups;
+   
+  for(int i = 0; i < 3;i++){
+    cout<<"\nEnter Tea : ";
+    getline(cin,Teacups);
+    for(int j = 1; j <= 3;j++){
+      cout<<j<<" brewing "<<Teacups<<endl;
+    }
   }
-  
-  cout<<"tea is served"<<endl;
- }
-    cout<<"no more tea served";
-    
+
   return 0;
 }
