@@ -5,41 +5,20 @@ using namespace std;
 
 int main(){
 
- int choice;
- double price;
+ int Tea;
 
- cout<<"select your tea\n";
- cout<<"1. Green tea\n";
- cout<<"2. Black tea\n";
- cout<<"3. Masala tea\n";
- cout<<"enter choice of number : ";
+ cout<<"enter number of teas : ";
+ cin>>Tea;
 
- cin>>choice;
+ cout<<"\n----Served cups of tea----\n"<<endl;
 
- cout<<"\n---The Price of Tea---\n";
-
- switch (choice){ 
-  case 1 :
-    price = 2.99;
-    cout<<"The Greem tea Price : "<<price<<endl;
-   break;
- 
-  case 2 :
-   price = 3.99;
-   cout<<"The Price of Black tea : "<<price<<endl;
-   break;
+ while (Tea > 0){
+  cout<<"Served cup of Tea : "<<Tea<<endl;
+   Tea--;
    
-  case 3 :
-   price = 4.99;
-   cout<<"The Price of Masala tea : "<<price<<endl;
-   break;
-
-  defaut:
-   cout<<"error"<<endl;
-
  }
 
+  cout<<"\n---all teas are served----\n";
 
-  
   return 0;
 }
