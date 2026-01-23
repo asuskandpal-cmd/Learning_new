@@ -10,15 +10,16 @@ int main(){
  cout<<"enter number of teas : ";
  cin>>Tea;
 
- cout<<"\n----Served cups of tea----\n"<<endl;
+ cout<<"\n----Served cups of tea----\n";
 
  while (Tea > 0){
-  cout<<"Served cup of Tea : "<<Tea<<endl;
+  cout<<"\n---cup of Tea Served---\n";
    Tea--;
+   cout<<"Reamaining cups : "<<Tea;
    
  }
 
-  cout<<"\n---all teas are served----\n";
+  cout<<"\n\n---all teas cups are served----\n";
 
   return 0;
 }
