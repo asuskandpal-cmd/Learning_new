@@ -5,21 +5,20 @@ using namespace std;
 
 int main(){
 
- int Tea;
+  string choice ;
 
- cout<<"enter number of teas : ";
- cin>>Tea;
+ while(true){
 
- cout<<"\n----Served cups of tea----\n";
+  cout<<"do you want more tea : ";
+  cin>>choice;
 
- while (Tea > 0){
-  cout<<"\n---cup of Tea Served---\n";
-   Tea--;
-   cout<<"Reamaining cups : "<<Tea;
-   
+  if(choice == "stop"){
+    break;
+  }
+  
+  cout<<"tea is served"<<endl;
  }
-
-  cout<<"\n\n---all teas cups are served----\n";
-
+    cout<<"no more tea served";
+    
   return 0;
 }
