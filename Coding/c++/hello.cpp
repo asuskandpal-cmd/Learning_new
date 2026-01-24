@@ -2,33 +2,33 @@
 #include <string>
 
 using namespace std;
-//Recursion
-void HW(int n);//function declaration
 
-int fact(int n){
+void fib(int a, int b, int n){
 
   if(n == 0){
-    return 1;
+   return;
   }
 
-  return n * fact(n-1);
+  cout<<a<<" ";
+  fib(b,a+b,n-1);
+
 }
+
+int fib(int n){
+
+  if(n <= 1){
+    return n;
+  }
+
+  return fib(n-1) + fib(n-2);
+
+}
+
 
 int main(){
 
-  HW(5);
-
-  cout<<"\n"<<fact(6)<<endl;
-
+  cout<<fib(6)<<endl;
+  fib(0,1,7);
+  
   return 0;
-}
-void HW(int n){//function defination
-
-  if(n == 0){//Base case
-    return;
-  }
-  HW(n-1);
-
-  cout<<n<<" hello world\n";
-   
 }
