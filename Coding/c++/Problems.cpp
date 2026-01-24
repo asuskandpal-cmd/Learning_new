@@ -11,7 +11,7 @@ int main(){
   cin>>num;
 
   if(num < 0){
-  cout<<"this is not a positive number";
+  cout<<"this is not a positive number";  
   }
 
  for(int i = 0; i<= num; i++){
